@@ -12,6 +12,7 @@ class BlogConfig(AppConfig):
                 duplicate = self.__class__(self.request)
             else:
                 duplicate = self.__class__()
+            duplicate.__dict__.update(self.__dict__)
             duplicate.dicts = list(self.dicts)
             return duplicate
 
