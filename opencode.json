@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "django-orm-verifier": {
+      "mode": "subagent",
+      "description": "Verifies and compares Django ORM queries against AI proposals and optimizes query counts."
+    },
+    "agent-boundary-security": {
+      "mode": "subagent",
+      "description": "Analyzes model safety, agent intent execution boundaries, and plan approvals."
+    },
+    "django-qa-runner": {
+      "mode": "subagent",
+      "description": "Manages environment setup, migrations, seed data, and Django test execution."
+    }
+  }
+}
